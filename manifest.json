@@ -1,13 +1,7 @@
 /*
-
-Code taken from, and modified
-
-http://stackoverflow.com/questions/14349263/
-creating-a-chrome-extension-which-takes-
-highlighted-text-on-the-page-and-inserts
-
+yandex key:
+trnsl.1.1.20160524T020057Z.2c62ed8aa4ede9f7.68122bb7f8a7c4a5b4484355733d877219b82a82
 */
-
 
 {
     "manifest_version": 2,

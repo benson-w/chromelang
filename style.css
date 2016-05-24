@@ -1,0 +1,21 @@
+body {
+    width: 400px;
+    height: 250px;
+}
+
+#text {
+    width: 350px;
+    height: 110px;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #020202;
+}
+
+#processed {
+    width:350px;
+    height: 110px;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #526CFF
+
+}
