@@ -1,9 +1,9 @@
-//for pasting something
 $(function(){
     $('#paste').click(function(){pasteSelection();});
     $('#translate').click(function(){translateSelection();});
 });
 
+//for posting something on button click
 function pasteSelection() {
     chrome.tabs.query({active:true, windowId: chrome.windows.WINDOW_ID_CURRENT},
     function(tab) {
@@ -12,6 +12,35 @@ function pasteSelection() {
             var text = document.getElementById('text');
             text.innerHTML = response.data;
         });
+    });
+};
+
+//to translate something on button click
+function translateSelection() {
+    chrome.tabs.query({active:true, windowId: chrome.windows.WINDOW_ID_CURRENT},
+    function(tab) {
+        //var source = document.getElementById('text').innerHTML
+        //console.log(document.getElementById('text').innerHTML)
+
+        //source.innerHTML =
+        //translatedtext = ""
+
+        var text = document.getElementById('translated');
+        text.innerHTML = "hi";
+
+    });
+};
+
+/*
+function translateSelection() {
+    chrome.tabs.query({active:true, windowId: chrome.windows.WINDOW_ID_CURRENT},
+    function(tab) {
+        function(response){
+            var text = document.getElementById('translated');
+            text.innerHTML = "testing text";
+            //text.innerHTML = response.data;
+            window.alert("sometext");
+        };
     });
 }
 
@@ -22,9 +51,11 @@ function translateSelection() {
             var text = document.getElementById('translated');
             text.innerHTML = "testing text";
             //text.innerHTML = response.data;
-        });
-    });
+        }
+    })
 }
+
+
 
 function getSelectionHtml() {
     var html = "";
